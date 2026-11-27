@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ahmed Amine Jerbi - CV</title>
+  <meta name="author" content="Ahmed Amine Jerbi">
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="name">Ahmed Amine Jerbi</h1>
+    <p class="headline">Business Information Systems Student, ESEN Manouba</p>
+    <ul class="contact">
+      <li>Tunis, Tunisia</li>
+      <li><a href="tel:+21625541819">+216 25 541 819</a></li>
+      <li><a href="mailto:ahmedamine.jerbi@esen.tn">ahmedamine.jerbi@esen.tn</a></li>
+    </ul>
+    <ul class="contact">
+      <li><a href="https://www.linkedin.com/in/ahmed-amine-jerbi/">linkedin.com/in/ahmed-amine-jerbi</a></li>
+      <li><a href="https://github.com/ahmed-amine-jerbi">github.com/ahmed-amine-jerbi</a></li>
+      <li><a href="https://ahmed-amine-jerbi.github.io/">ahmed-amine-jerbi.github.io</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p>Final-year Business Information Systems student at ESEN. I build <span class="nowrap">full-stack</span> web applications with React, TypeScript, C# (ASP.NET Core), Python and SQL, from a BPMN or UML model of the business process to a tested application with a REST API and a database.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry__head">
+        <h3><strong>Bachelor’s Degree in Business Information Systems</strong></h3>
+        <span class="when">2024 – Current</span>
+      </div>
+      <p class="where">École Supérieure de l’Économie Numérique (ESEN), Université de la Manouba</p>
+    </div>
+    <div class="entry">
+      <div class="entry__head">
+        <h3><strong>Baccalaureate in Computer Science, with honours</strong></h3>
+        <span class="when">2024</span>
+      </div>
+      <p class="where">Lycée Rue de Russie, Tunis</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="entry__head">
+        <h3><strong>Marketlens</strong>: <span class="role">live prices and forecasts for currencies, crypto and stocks</span></h3>
+        <span class="when">Nov 2026</span>
+      </div>
+      <p class="meta">React, TypeScript, ASP.NET Core, PostgreSQL, Python — <a href="https://github.com/ahmed-amine-jerbi/marketlens">github.com/ahmed-amine-jerbi/marketlens</a></p>
+      <ul class="points">
+        <li>Built a web app that follows 161 currencies, 31 cryptocurrencies and 50 US stocks and ETFs, with crypto prices updating live every second through SignalR.</li>
+        <li>Wrote the Python forecasting service. Each chart shows a 7-day price range and how often past ranges held.</li>
+        <li>Starts with one Docker command and needs no API keys. Each part has its own tests, run on GitHub Actions.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <h3><strong>ReturnFlow</strong>: <span class="role">returns and claims management for online shops</span></h3>
+        <span class="when">Oct 2026</span>
+      </div>
+      <p class="meta">React, ASP.NET Core, PostgreSQL, JWT, Python, scikit-learn — <a href="https://github.com/ahmed-amine-jerbi/returnflow">github.com/ahmed-amine-jerbi/returnflow</a></p>
+      <ul class="points">
+        <li>Customers file a return from their phone, a Python model scores its risk, and small low-risk claims made within 30 days are approved in seconds.</li>
+        <li>Unclear cases go to an agent, and so does every claim when the AI service is down. A customer can always ask for a person to look again.</li>
+        <li>Modelled the process in BPMN and built a dashboard showing how many claims were settled automatically.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <h3><strong>E-Student</strong>: <span class="role">classroom management platform</span></h3>
+        <span class="when">Mar – Apr 2026</span>
+      </div>
+      <p class="meta">End-of-year project, ESEN — PHP, MySQL, C# — <a href="https://github.com/ahmed-amine-jerbi/E-Student-Platform">github.com/ahmed-amine-jerbi/E-Student-Platform</a></p>
+      <ul class="points">
+        <li>Built a school platform where teachers post homework, take attendance and enter grades, and students check their courses and timetable.</li>
+        <li>Designed the 18-table MySQL database. Passwords are hashed, and user input only reaches the database through prepared statements.</li>
+        <li>Later rewrote it as a C# desktop app (Windows Forms) on the same database, so the same accounts work in both.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="entry">
+      <div class="entry__head">
+        <h3 class="cert"><strong>Cybersecurity Fundamentals</strong>, IBM SkillsBuild (<a href="https://www.credly.com/badges/a1ef7a00-3d04-4fe1-bf7b-22a3d0224343/public_url">verify on Credly</a>)</h3>
+        <span class="when">May 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills and Languages</h2>
+    <dl class="skills">
+      <dt>Programming</dt><dd>C#, TypeScript, JavaScript, Python, PHP, SQL</dd>
+      <dt>Front-end</dt><dd>React, Tailwind CSS, HTML, CSS</dd>
+      <dt>Back-end</dt><dd>ASP.NET Core, Entity Framework Core, FastAPI</dd>
+      <dt>Data</dt><dd>PostgreSQL, Oracle (SQL, PL/SQL), MySQL, pandas, scikit-learn</dd>
+      <dt>Testing, DevOps</dt><dd>xUnit, pytest, Vitest, Docker, GitHub Actions (CI/CD), Git</dd>
+      <dt>Modelling</dt><dd>BPMN, UML</dd>
+      <dt>Languages</dt><dd>Arabic (native), English (C1), French (B2), German (A2)</dd>
+    </dl>
+  </section>
+</body>
+</html>

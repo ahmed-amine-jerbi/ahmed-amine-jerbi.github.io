@@ -1,0 +1,13 @@
+{
+  "name": "ahmed-amine-jerbi.github.io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild js/main.js --bundle --format=iife --minify --target=es2020 --legal-comments=eof --outfile=js/site.bundle.js",
+    "cv": "node tools/render-cv.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0",
+    "playwright": "1.58.2"
+  }
+}
