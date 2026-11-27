@@ -330,7 +330,6 @@ main {
 }
 
 .eyebrow,
-.section-number,
 .project__meta,
 .timeline__when,
 .certificate__meta {
@@ -387,13 +386,6 @@ main {
   transition: color 150ms var(--ease-out);
 }
 
-.site-header__index {
-  color: var(--ink-faint);
-  font-family: var(--mono);
-  font-size: var(--step--2);
-  transition: color 150ms var(--ease-out);
-}
-
 .site-header__nav a::after {
   content: "";
   position: absolute;
@@ -410,10 +402,6 @@ main {
 .site-header__nav a:hover,
 .site-header__nav a[aria-current="true"] {
   color: var(--ink);
-}
-
-.site-header__nav a[aria-current="true"] .site-header__index {
-  color: var(--saffron);
 }
 
 .site-header__nav a[aria-current="true"]::after {
@@ -529,12 +517,6 @@ main {
   font-variation-settings: "wdth" 118;
   line-height: 1.02;
   letter-spacing: -0.015em;
-}
-
-.section-number {
-  padding-top: 0.55em;
-  color: var(--saffron);
-  line-height: 1;
 }
 
 /* Words of a split title sit in masks so they can rise into view (main.js). */
@@ -711,8 +693,6 @@ body.can-drag .hero__hint-pointer {
 
 .layer__button {
   display: grid;
-  grid-template-columns: 2.25rem 1fr;
-  column-gap: var(--space-2);
   width: 100%;
   padding: var(--space-3) var(--space-2);
   border: 0;
@@ -721,15 +701,6 @@ body.can-drag .hero__hint-pointer {
   font: inherit;
   text-align: left;
   cursor: pointer;
-}
-
-.layer__index {
-  grid-row: span 2;
-  padding-top: 0.35rem;
-  color: var(--ink-faint);
-  font-family: var(--mono);
-  font-size: var(--step--2);
-  transition: color 250ms var(--ease-out);
 }
 
 .layer__name {
@@ -761,12 +732,11 @@ body.can-drag .hero__hint-pointer {
   transform: scaleY(1);
 }
 
-.layer.is-active .layer__name,
-.layer.is-active .layer__index {
+.layer.is-active .layer__name {
   color: var(--saffron);
 }
 
-.layer.is-hovered .layer__index {
+.layer.is-hovered:not(.is-active) .layer__name {
   color: var(--sea);
 }
 

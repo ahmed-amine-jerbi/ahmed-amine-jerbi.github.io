@@ -624,25 +624,15 @@ function addReveals() {
 
   for (const title of document.querySelectorAll("[data-split]")) {
     const words = title.querySelectorAll(".word");
-    const number = title.querySelector(".section-number");
     gsap.set(words, { yPercent: 110 });
-    if (number) {
-      gsap.set(number, { autoAlpha: 0, x: -12 });
-    }
     ScrollTrigger.create({
       trigger: title,
       start: "top 85%",
       onEnter: () => {
         gsap.to(words, { yPercent: 0, duration: 1, ease: "power4.out", stagger: 0.06, overwrite: true });
-        if (number) {
-          gsap.to(number, { autoAlpha: 1, x: 0, duration: 0.6, ease: "power3.out", overwrite: true });
-        }
       },
       onLeaveBack: () => {
         gsap.to(words, { yPercent: 110, duration: 0.4, ease: "power2.in", overwrite: true });
-        if (number) {
-          gsap.to(number, { autoAlpha: 0, x: -12, duration: 0.3, overwrite: true });
-        }
       },
     });
   }
