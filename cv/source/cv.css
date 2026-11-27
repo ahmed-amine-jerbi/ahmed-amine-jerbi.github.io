@@ -167,7 +167,8 @@ h2 {
 }
 
 .meta a,
-.cert a {
+.cert a,
+.points a {
   text-decoration: underline;
   text-decoration-color: var(--underline);
   text-decoration-thickness: 0.75pt;
