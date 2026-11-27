@@ -852,13 +852,6 @@ body.can-drag .hero__hint-pointer {
   color: var(--ink-soft);
 }
 
-.project__number {
-  padding: 0.15rem 0.4rem;
-  border: 1px solid var(--saffron);
-  border-radius: 4px;
-  color: var(--saffron);
-}
-
 .project__name {
   margin: var(--space-3) 0 var(--space-4);
   font-size: var(--step-3);
