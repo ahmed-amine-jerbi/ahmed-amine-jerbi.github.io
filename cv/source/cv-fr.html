@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <h1 class="name">Ahmed Amine Jerbi</h1>
-    <p class="headline">Étudiant en Licence Informatique de Gestion, ESEN Manouba</p>
+    <p class="headline">Développeur full-stack (React, .NET, Python), étudiant en Licence Informatique de Gestion à l’ESEN</p>
     <ul class="contact">
       <li>Tunis, Tunisie</li>
       <li><a href="tel:+21625541819">+216 25 541 819</a></li>
@@ -24,7 +24,7 @@
 
   <section>
     <h2>Profil</h2>
-    <p>Étudiant en dernière année de Licence Informatique de Gestion à l’ESEN. Je développe des applications web <span class="nowrap">full-stack</span> avec React, TypeScript, C# (ASP.NET Core), Python et SQL, du modèle BPMN ou UML du processus métier jusqu’à une application testée, avec API REST et base de données.</p>
+    <p>Étudiant en dernière année, je développe des applications web <span class="nowrap">full-stack</span> avec React, TypeScript, C# (ASP.NET Core), Python et SQL, du modèle BPMN ou UML du processus métier jusqu’à une application testée, avec API REST et base de données. Je recherche un stage de fin d’études (PFE) en développement logiciel à partir de février 2027.</p>
   </section>
 
   <section>
@@ -57,20 +57,20 @@
       <ul class="points">
         <li>Application web qui suit 161 devises, 31 cryptomonnaies et 50 actions et ETF américains, avec des cours crypto mis à jour chaque seconde grâce à SignalR.</li>
         <li>Service de prévision en Python&nbsp;: fourchette de prix à 7 jours et taux de réussite des fourchettes passées.</li>
-        <li>Lancement en une commande Docker, sans clé d’API. Tests sur chaque partie, exécutés par GitHub Actions.</li>
+        <li>Les trois services démarrent en une commande Docker, sans clé d’API pour les devises et les cryptos. GitHub Actions vérifie le style, les types et les tests de chaque service à chaque push.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry__head">
         <h3><strong>ReturnFlow</strong>&nbsp;: <span class="role">gestion des retours et réclamations pour boutiques en ligne</span></h3>
-        <span class="when">oct. 2026</span>
+        <span class="when">oct. – nov. 2026</span>
       </div>
       <p class="meta">React, ASP.NET Core, PostgreSQL, JWT, Python, scikit-learn — <a href="https://github.com/ahmed-amine-jerbi/returnflow">github.com/ahmed-amine-jerbi/returnflow</a></p>
       <ul class="points">
-        <li>Le client déclare un retour depuis son téléphone, un modèle Python évalue le risque, et les petites réclamations peu risquées, dans le délai de 30 jours, sont acceptées en quelques secondes.</li>
-        <li>Les cas douteux partent chez un agent, comme toutes les réclamations quand le service IA est en panne. Le client peut toujours demander qu’une personne revoie son dossier.</li>
-        <li>Processus modélisé en BPMN, et tableau de bord avec la part des réclamations traitées automatiquement.</li>
+        <li>Politique de décision en C#, testée unitairement, qui accepte une réclamation, la refuse ou la transmet à un agent selon la catégorie et le risque estimés par un modèle Python. Le modèle ne décide jamais seul.</li>
+        <li>Seules les réclamations floues, risquées ou élevées vont à un agent, avec 5&nbsp;% de contrôles aléatoires et tout ce qui arrive pendant une panne du service IA. Le client peut toujours demander un avis humain.</li>
+        <li>Processus modélisé en BPMN avec les mêmes règles que le code, et tableau de bord pour les managers avec le taux d’automatisation, la part IA ou humaine des décisions et le délai par jour et par semaine.</li>
       </ul>
     </div>
 
